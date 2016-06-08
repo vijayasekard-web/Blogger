@@ -1,0 +1,14 @@
+<h1>Hello From Rails</h1>
+<p>
+    It is now <%= @time %>
+    Say <a href="/say/goodbye"> GoodBye</a>!
+</p>
+<p>
+    GoodBye again <%= link_to "Goodbye", say_goodbye_path %>!
+</p>
+
+<p>
+    <% for file in  @files%>
+        file name is: <%= file %>
+    <% end %>
+</p>
